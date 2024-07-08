@@ -76,7 +76,7 @@ resource "aws_s3_object" "content" {
     aws_s3_bucket.cloudbucket
   ]
   bucket                 =  aws_s3_bucket.cloudbucket.bucket
-  key                    = "index.html"                              #########if you give /demo then  you give on browser --> cloudfronturl/demo
+  key                    = "index.html"                              #########if you give /demo then  you give on browser --> cloudfronturl/demo        ....basically whatever you have write here you need to paste after cloudfront url compulsory  you can put name  anything here
   source                 = "./index.html"                            ######### location of your root dir or index file
   server_side_encryption = "AES256"
 
