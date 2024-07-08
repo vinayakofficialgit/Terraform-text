@@ -101,13 +101,22 @@ resource "aws_cloudfront_distribution" "clouddistribution" {
   enabled             = true
   default_root_object = "index.html"
 
+ #restrictions {
+ #  geo_restriction {
+ #    restriction_type = "whitelist"
+ #     locations        = ["US", "CA","IN"]
+ #  }
+    
+ # }
+
+
   restrictions {
     geo_restriction {
-      restriction_type = "whitelist"
-      locations        = ["US", "CA","IN"]
+      restriction_type = "none"
     }
-    
   }
+
+
 
   default_cache_behavior {
     allowed_methods        = ["GET", "HEAD"]
