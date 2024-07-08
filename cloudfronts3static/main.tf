@@ -1,8 +1,5 @@
 
-# This hands-on lab will guide you through the steps to host static web content in an Amazon S3 bucket , protected and accelerated by Amazon CloudFront. 
-# Skills learned will help you secure your workloads in alignment with the AWS Well-Architected Framework.
-
-## Create bucket
+##### Create bucket
 resource "aws_s3_bucket" "cloudbucket" {
   bucket = var.bucket_name
 
