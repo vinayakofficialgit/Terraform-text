@@ -143,7 +143,7 @@ resource "aws_cloudfront_distribution" "clouddistribution" {
 ## Create Origin Access Control as this is required to allow access to the s3 bucket without public access to the S3 bucket.
 resource "aws_cloudfront_origin_access_control" "Site_Access" {
   name                              = "myorigibsetting"
-  description                       = "OAC setup for security pillar 100"
+  description                       = "it allow CF to fetch data privately from origin"
   origin_access_control_origin_type = "s3"
   signing_behavior                  = "always"
   signing_protocol                  = "sigv4"
