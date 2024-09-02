@@ -2,3 +2,6 @@ terraform plan -detailed-exitcode      ------------------this allows you to simu
    exit 0  mean no changes would have been made
    exit 1  means changes would have been made
    exit 2  means  there was an error
+
+to check logs
+#TF_LOG=DEBUG terraform plan
