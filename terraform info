@@ -1,1 +1,8 @@
 element in terraform is used to retrieve specific single value from the list or tuple 
+
+
+The three health checks are:
+
+Instance status check : This checks the instance's underlying hardware and hypervisor for any issues.
+System status check : This checks the instance's operating system and software for any issues.
+Reachability check : This checks if the instance is reachable from the internet.
